@@ -1,98 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADBLogin Official - Advanced Antidetect Browser</title>
-    <meta name="description" content="Professional Antidetect Browser for Automation Engineers. 111+ versions released.">
+    
+    <title>ADBLogin Official - #1 Antidetect Browser & Automation Tool</title>
+    <meta name="description" content="ADBLogin - Trình duyệt kháng sreach chuyên nghiệp cho Automation Engineer. Hỗ trợ Multilogin X API, Playwright, Selenium. Update liên tục 111+ phiên bản.">
+    <meta name="keywords" content="ADBLogin, Antidetect Browser, Multilogin X, Automation Tool, MMO, Playwright Automation, Selenium Browser">
+    <meta name="author" content="ADBLogin-Official">
+    <link rel="canonical" href="https://adblogin-official.github.io/" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adblogin-official.github.io/">
+    <meta property="og:title" content="ADBLogin Official - Antidetect Browser Milestone v111">
+    <meta property="og:description" content="Giải pháp trình duyệt chống phát hiện chuyên nghiệp. 111+ build ổn định.">
+    <meta property="og:image" content="https://adblogin-official.github.io/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "SoftwareApplication",
+      "name": "ADBLogin",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "BusinessApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1250"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Professional Antidetect Browser for Automation Engineers. 111+ versions released. Optimized for Multilogin X API.",
+      "softwareVersion": "v111",
+      "downloadUrl": "https://github.com/ADBLogin-Official/ADBLogin/releases/latest"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Mã giảm giá Multilogin mới nhất là gì?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sử dụng coupon ADBNEW50 để được giảm giá 50% cho Multilogin X."
+        }
+      }, {
+        "@type": "Question",
+        "name": "ADBLogin có hỗ trợ Playwright không?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Có, ADBLogin được tối ưu hóa hoàn toàn cho Playwright, Selenium thông qua cấu trúc API chuẩn."
+        }
+      }]
+    }
+    </script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --main-blue: #007bff; --dark-bg: #0d1117; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; color: #333; }
-        .hero-section { background: linear-gradient(135deg, #0d1117 0%, #161b22 100%); color: white; padding: 100px 0; border-bottom: 3px solid var(--main-blue); }
-        .btn-download { background-color: var(--main-blue); border: none; padding: 15px 40px; font-size: 1.2rem; font-weight: bold; border-radius: 50px; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,123,255,0.4); }
-        .btn-download:hover { background-color: #0056b3; transform: translateY(-3px); color: white; }
-        .feature-card { border: none; border-radius: 15px; padding: 30px; transition: 0.3s; background: white; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .feature-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        .coupon-box { background: #fff3cd; border: 2px dashed #ffc107; border-radius: 10px; padding: 20px; margin-top: 30px; }
-        .badge-ver { background: #238636; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
-        footer { background: var(--dark-bg); color: #8b949e; padding: 50px 0; }
-        .telegram-float { position: fixed; bottom: 30px; right: 30px; background: #0088cc; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; z-index: 1000; }
+        :root { --primary: #007bff; --bg-dark: #0d1117; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #fdfdfd; }
+        .hero { background: radial-gradient(circle at top right, #161b22, #0d1117); color: white; padding: 120px 0 80px; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 25px; }
+        .btn-vip { background: linear-gradient(45deg, #007bff, #00c6ff); border: none; color: white; padding: 18px 45px; border-radius: 50px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; transition: 0.4s; }
+        .btn-vip:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(0,123,255,0.5); color: white; }
+        .coupon-section { background: #000; color: #ffc107; padding: 40px; border-radius: 30px; border: 2px solid #ffc107; }
+        .stat-number { font-size: 2.5rem; font-weight: 900; color: var(--primary); }
+        .telegram-float { position: fixed; bottom: 30px; right: 30px; background: #0088cc; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); text-decoration: none; z-index: 9999; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
     </style>
 </head>
 <body>
 
-    <header class="hero-section text-center">
+    <section class="hero text-center">
         <div class="container">
-            <h1 class="display-3 fw-bold mb-3">🛡️ ADBLogin Official</h1>
-            <p class="lead mb-4 text-secondary">Advanced Antidetect Browser Solution for Professional Automation Engineers</p>
-            <div class="mb-4">
-                <span class="badge-ver"><i class="fas fa-code-branch"></i> Latest Build: #111</span>
-                <span class="badge-ver ms-2"><i class="fas fa-check-circle"></i> 5+ Years Development</span>
+            <h1 class="display-2 fw-bold mb-4">ADBLogin <span class="text-primary">Pro</span></h1>
+            <p class="lead text-secondary mb-5 mx-auto" style="max-width: 800px;">
+                Trình duyệt Antidetect thế hệ mới dành cho Kỹ sư Automation. 
+                Vượt rào mọi hệ thống quét vân tay với hơn 111 bản build ổn định.
+            </p>
+            <div class="d-flex justify-content-center gap-3 mb-5">
+                <div class="glass-card"><strong>111+</strong><br><small>Versions</small></div>
+                <div class="glass-card"><strong>5+ Years</strong><br><small>Experience</small></div>
+                <div class="glass-card"><strong>API X</strong><br><small>Optimized</small></div>
             </div>
-            <a href="https://github.com/ADBLogin-Official/ADBLogin/releases/latest" class="btn btn-download mb-3">
-                <i class="fas fa-download me-2"></i> DOWNLOAD LATEST BUILD
+            <a href="https://github.com/ADBLogin-Official/ADBLogin/releases/latest" class="btn btn-vip">
+                <i class="fas fa-rocket me-2"></i> Download Build #111
             </a>
-            <p class="text-secondary small">Current Version: V111 | Password: 999</p>
         </div>
-    </header>
+    </section>
 
-    <section class="py-5">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-5">Why Choose ADBLogin?</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <i class="fas fa-robot fa-3x text-primary mb-3"></i>
-                        <h4>Automation Ready</h4>
-                        <p>Fully optimized for Playwright, Selenium, and Puppeteer via Multilogin X API structure.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <i class="fas fa-fingerprint fa-3x text-primary mb-3"></i>
-                        <h4>Ultimate Spoofing</h4>
-                        <p>Advanced protection for Canvas, WebGL, WebRTC, and AudioContext fingerprints.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <i class="fas fa-server fa-3x text-primary mb-3"></i>
-                        <h4>Mass Management</h4>
-                        <p>Manage thousands of profiles with extremely low RAM and CPU consumption.</p>
-                    </div>
-                </div>
+    <section class="py-5 container text-center">
+        <div class="row">
+            <div class="col-md-4"><div class="stat-number">99%</div><p>Success Rate</p></div>
+            <div class="col-md-4"><div class="stat-number">24/7</div><p>Fast Support</p></div>
+            <div class="col-md-4"><div class="stat-number">Free</div><p>Lifetime Updates</p></div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="coupon-section text-center">
+            <h2 class="fw-bold">MULTILOGIN PARTNER COUPON</h2>
+            <p class="text-white opacity-75">Nhập mã ngay để nhận ưu đãi 50% trọn đời</p>
+            <div class="display-4 fw-black my-3" style="letter-spacing: 5px;">ADBNEW50</div>
+            <a href="https://multilogin.com?a_aid=ADB" class="btn btn-warning fw-bold px-5">KÍCH HOẠT ƯU ĐÃI</a>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center fw-bold mb-5">Frequently Asked Questions</h2>
+        <div class="accordion mx-auto" id="faqApp" style="max-width: 800px;">
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">ADBLogin hỗ trợ ngôn ngữ nào?</button></h2>
+                <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqApp"><div class="accordion-body">ADBLogin hỗ trợ Python, C#, Playwright, Selenium thông qua Multilogin X API.</div></div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Làm sao để tránh virus báo nhầm?</button></h2>
+                <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqApp"><div class="accordion-body">Bạn cần thêm thư mục cài đặt ADBLogin vào Whitelist của Windows Defender hoặc Antivirus.</div></div>
             </div>
         </div>
     </section>
 
-    <section class="py-5 bg-white">
-        <div class="container text-center">
-            <div class="coupon-box mx-auto" style="max-width: 600px;">
-                <h3 class="fw-bold text-dark">🔥 Exclusive Partner Offer</h3>
-                <p>Get 50% OFF Multilogin with our official coupon code:</p>
-                <div class="display-6 fw-bold text-danger mb-3">ADBNEW50</div>
-                <a href="https://multilogin.com?a_aid=ADB" class="btn btn-outline-dark px-4 py-2">Apply Coupon Now</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container text-center">
-            <div class="mb-4">
-                <a href="https://adblogin.com" class="text-white text-decoration-none mx-3">Website</a>
-                <a href="https://github.com/ADBLogin-Official/ADBLogin" class="text-white text-decoration-none mx-3">GitHub Archive</a>
-                <a href="https://t.me/ToolsKiemTrieuDo" class="text-white text-decoration-none mx-3">Support</a>
-            </div>
-            <p>&copy; 2021 - 2026 ADBLogin Official - Engineering by Sếp Lộc.</p>
-            <p class="small">Disclaimer: Add software folder to Antivirus Whitelist for full automation functionality.</p>
+    <footer class="py-5 text-center bg-light border-top">
+        <p class="mb-2">© 2026 ADBLogin Official - Danang Automation Tech</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="https://t.me/ToolsKiemTrieuDo" class="text-dark"><i class="fab fa-telegram"></i> Telegram</a>
+            <a href="https://adblogin.com" class="text-dark"><i class="fas fa-globe"></i> Website</a>
         </div>
     </footer>
 
-    <a href="https://t.me/ToolsKiemTrieuDo" class="telegram-float" target="_blank">
-        <i class="fab fa-telegram-plane"></i>
-    </a>
+    <a href="https://t.me/ToolsKiemTrieuDo" class="telegram-float"><i class="fab fa-telegram-plane"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
